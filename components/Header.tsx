@@ -10,7 +10,7 @@ export default function Header() {
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [cartItems, setCartItems] = useState(); // Example cart count
+  const [cartItems, setCartItems] = useState(0); // Example cart count
 
   // Fetch search results with debounce
   useEffect(() => {

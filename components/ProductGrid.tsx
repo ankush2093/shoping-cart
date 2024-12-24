@@ -65,6 +65,7 @@
 import { useEffect, useState } from "react";
 import { fetchProducts } from "../lib/dummyApi";
 import { useCart } from "../lib/CartContext";
+import Image from "next/image";
 
 export default function ProductGrid() {
   const [products, setProducts] = useState([]);
@@ -118,6 +119,8 @@ export default function ProductGrid() {
               src={product.thumbnail}
               alt={product.title}
               className="w-full h-32 object-cover"
+              // width={200}
+              // height={200}
             />
             <h3 className="font-semibold mt-2">{product.title}</h3>
             <p className="text-sm">₹{product.price}</p>
