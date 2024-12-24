@@ -65,7 +65,6 @@
 import { useEffect, useState } from "react";
 import { fetchProducts } from "../lib/dummyApi";
 import { useCart } from "../lib/CartContext";
-import Image from "next/image";
 
 export default function ProductGrid() {
   const [products, setProducts] = useState([]);
